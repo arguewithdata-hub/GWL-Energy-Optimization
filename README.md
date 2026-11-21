@@ -15,6 +15,11 @@ This repository contains Mixed-Integer Linear Programming (MILP) models built in
 *   **File:** `George_Ayensu_Week3_DataCenter_RTES.ipynb`
 *   **Description:** Advanced thermal storage model. This model integrates a high-efficiency Reservoir Thermal Energy Storage (RTES) system (COP 16.5) against a traditional chiller (COP 4.0). The MILP algorithm proves that utilizing RTES completely eliminates the need for traditional chillers, shifting the entire cooling load to off-peak hours and reducing the daily electricity cost by over 50% ($8,335 down to $3,800).
 
+## Project 4: Critical Minerals Processing Load-Shifting (Week 4)
+*   **File:** `George_Ayensu_Week4_CriticalMinerals_BESS.ipynb`
+*   **Description:** Demonstrates algorithmic energy management for the Critical Minerals sector. Inspired by real-world mining operations (Asanko Gold), this model optimizes a Battery Energy Storage System (BESS) to shift the peak demand of a continuous 20 MW mining load (e.g., a SAG mill). It proves that massive industrial loads can avoid peak tariffs without interrupting production.
+
+---
 
 ## Data Source & Assumptions
 The empirical parameters used in the Water Utility models (capacity, energy intensity, storage limits) were derived from real-time SCADA readings, nameplate data, and operational audits conducted at the Ghana Water Limited (GWL) Weija Head Works. 
@@ -23,8 +28,4 @@ The empirical parameters used in the Water Utility models (capacity, energy inte
 *   **New Plant:** 3 × 1000 kW motors (3.3 kV), capacity 2250 m³/hr, calculated energy intensity 0.398 kWh/m³.
 *   **Storage:** 5 clear wells, total capacity ~22,730 m³.
 
-*Note: Due to corporate confidentiality policies, raw SCADA data is not published. The code utilizes the mathematically derived parameters from the plant data to simulate the optimization scenarios. The Data Center models (Weeks 2 & 3) utilize standard industry benchmarks for server cooling loads and thermal storage efficiencies to demonstrate mathematical transferability.*
-
-
-
-
+*Note: Due to corporate confidentiality policies, raw SCADA data is not published. The code utilizes the mathematically derived parameters from the plant data to simulate the optimization scenarios. The Data Center models (Weeks 2 & 3) and Critical Minerals model (Week 4) utilize standard industry benchmarks for loads and storage efficiencies to demonstrate mathematical transferability.*
