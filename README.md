@@ -19,6 +19,13 @@ This repository contains Mixed-Integer Linear Programming (MILP) models built in
 *   **File:** `George_Ayensu_Week4_CriticalMinerals_BESS.ipynb`
 *   **Description:** Demonstrates algorithmic energy management for the Critical Minerals sector. Inspired by real-world mining operations (Asanko Gold), this model optimizes a Battery Energy Storage System (BESS) to shift the peak demand of a continuous 20 MW mining load (e.g., a SAG mill). It proves that massive industrial loads can avoid peak tariffs without interrupting production.
 
+## Project 5: Microgrid Design & Dispatch Optimization (Week 5)
+*   **File:** `George_Ayensu_Week5_REopt_Microgrid.ipynb`
+*   **Description:** A capstone optimization model inspired by NREL's REopt platform. This MILP model uses **Binary Integer variables** to simultaneously solve the design problem (optimal sizing of Distributed Energy Resources) and the dispatch problem. 
+*   **Sensitivity Analysis Results:** 
+    *   *Scenario A:* Proves that under low grid tariffs, the algorithm correctly chooses not to build capital-intensive DERs (Cost: $54.00/day).
+    *   *Scenario B:* Under high peak pricing, the algorithm independently selects to build a Solar array (cost-effective for daytime offsets) while rejecting the Battery (CAPEX too high for its limited operational savings), reducing the daily cost to $60.20.
+
 ---
 
 ## Data Source & Assumptions
@@ -28,4 +35,4 @@ The empirical parameters used in the Water Utility models (capacity, energy inte
 *   **New Plant:** 3 × 1000 kW motors (3.3 kV), capacity 2250 m³/hr, calculated energy intensity 0.398 kWh/m³.
 *   **Storage:** 5 clear wells, total capacity ~22,730 m³.
 
-*Note: Due to corporate confidentiality policies, raw SCADA data is not published. The code utilizes the mathematically derived parameters from the plant data to simulate the optimization scenarios. The Data Center models (Weeks 2 & 3) and Critical Minerals model (Week 4) utilize standard industry benchmarks for loads and storage efficiencies to demonstrate mathematical transferability.*
+*Note: Due to corporate confidentiality policies, raw SCADA data is not published. The code utilizes the mathematically derived parameters from the plant data to simulate the optimization scenarios. The Data Center models (Weeks 2 & 3), Critical Minerals model (Week 4), and Microgrid model (Week 5) utilize standard industry benchmarks for loads and storage efficiencies to demonstrate mathematical transferability.*
