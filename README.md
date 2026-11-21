@@ -1,8 +1,7 @@
-![Visitors](https://api.visitorbadge.io/api/visitors?path=https%3A%2F%2Fgithub.com%2Farguewithdata-hub%2FGWL-Energy-Optimization&countColor=%23263759)
 # Energy Optimization Models (MILP)
 **Author:** George Ayensu, PE (Professional Electrical Engineer)
 
-This repository contains Mixed-Integer Linear Programming (MILP) models built in Python (Pyomo) to demonstrate algorithmic energy management for inflexible loads. 
+This repository contains Mixed-Integer Linear Programming (MILP) models built in Python (Pyomo) to demonstrate algorithmic energy management for inflexible loads.
 
 ## Project 1: Water Utility Optimization (Week 1)
 *   **File:** `George_Ayensu_Week1_Data_Analysis_PhD_Working_Code.ipynb`
@@ -12,13 +11,20 @@ This repository contains Mixed-Integer Linear Programming (MILP) models built in
 *   **File:** `George_Ayensu_Week2_DataCenter_Optimization.ipynb`
 *   **Description:** Demonstrates the mathematical transferability of the Week 1 model to Data Centers. The model optimizes chiller dispatch and Thermal Energy Storage (TES) to meet an inflexible server cooling load, successfully avoiding inefficient chillers during peak tariff hours.
 
----
+## Project 3: Data Center RTES Integration (Week 3)
+*   **File:** `George_Ayensu_Week3_DataCenter_RTES.ipynb`
+*   **Description:** Advanced thermal storage model. This model integrates a high-efficiency Reservoir Thermal Energy Storage (RTES) system (COP 16.5) against a traditional chiller (COP 4.0). The MILP algorithm proves that utilizing RTES completely eliminates the need for traditional chillers, shifting the entire cooling load to off-peak hours and reducing the daily electricity cost by over 50% ($8,335 down to $3,800).
+
 
 ## Data Source & Assumptions
-The empirical parameters used in these models (capacity, energy intensity, storage limits) were derived from real-time SCADA readings, nameplate data, and operational audits conducted at the Ghana Water Limited (GWL) Weija Head Works. 
+The empirical parameters used in the Water Utility models (capacity, energy intensity, storage limits) were derived from real-time SCADA readings, nameplate data, and operational audits conducted at the Ghana Water Limited (GWL) Weija Head Works. 
 
 *   **Old Plant:** 3 × 500 kW motors (3.3 kV), capacity 1000 m³/hr, calculated energy intensity 0.533 kWh/m³.
 *   **New Plant:** 3 × 1000 kW motors (3.3 kV), capacity 2250 m³/hr, calculated energy intensity 0.398 kWh/m³.
 *   **Storage:** 5 clear wells, total capacity ~22,730 m³.
 
-*Note: Due to corporate confidentiality policies, raw SCADA data is not published. The code utilizes the mathematically derived parameters from the plant data to simulate the optimization scenarios.*
+*Note: Due to corporate confidentiality policies, raw SCADA data is not published. The code utilizes the mathematically derived parameters from the plant data to simulate the optimization scenarios. The Data Center models (Weeks 2 & 3) utilize standard industry benchmarks for server cooling loads and thermal storage efficiencies to demonstrate mathematical transferability.*
+
+
+
+
