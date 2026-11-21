@@ -1,3 +1,4 @@
+![Visitors](https://api.visitorbadge.io/api/visitors?path=https%3A%2F%2Fgithub.com%2Farguewithdata-hub%2FGWL-Energy-Optimization&countColor=%23263759)
 # Energy Optimization Models (MILP)
 **Author:** George Ayensu, PE (Professional Electrical Engineer)
 
