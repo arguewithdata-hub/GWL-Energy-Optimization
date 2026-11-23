@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: "If you use this software or optimization framework, please cite it as below."
+authors:
+  - family-names: "Ayensu"
+    given-names: "George"
+    orcid: "https://orcid.org/your-orcid-id-if-you-have-one" # Remove this line if you don't have one
+    credentials: "PE"
+title: "Energy Optimization Models (MILP): Water Utilities, Data Centers, and Critical Minerals"
+version: 1.0.0
+date-released: 2026-11-23
+url: "https://github.com/arguewithdata-hub/GWL-Energy-Optimization"
